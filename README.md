@@ -54,4 +54,34 @@ python main.py
 
 ![ファインチューン結果の比較ツール](image.png)
 
+
+## Google Colabで動かすには
+
+GPUは不要ですので、ランタイムメニューのランタイムのタイプを変更から、CPUを選択して、で動かしましょう。長く使えるようになります
+
+1. `main.py`のコードを丸ごと１つのセルにコピペしたあと、以下の変更をします
+
+    最初に gradioをインストール
+    ```py
+    %pip install gradio
+    ```
+
+    最後のmain()呼び出し部分はコメントアウトして、直接main()を呼び出す
+    ```py
+    # if __name__ == "__main__":
+    #    main()
+    main()
+    ```
+
+1. 比較したいJSONLファイルを２つアップロードし、ファイル名を正しく設定します。
+
+1. Gradioの画面が表示されますが、狭いので、以下のように表示されているリンクを開くと大きな画面で開くことができます。
+
+    ```sh
+    Colab notebook detected. To show errors in colab notebook, set debug=True in launch()
+    * Running on public URL: https://xxxxxxxxxxxxxxxxx.gradio.live
+
+    This share link expires in 72 hours.  For free permanent hosting and GPU upgrades, …
+    ```
+
 以上
