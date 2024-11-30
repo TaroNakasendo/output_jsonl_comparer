@@ -1,0 +1,2 @@
+# output_jsonl_comparer
+ファインチューン結果の比較ツール
