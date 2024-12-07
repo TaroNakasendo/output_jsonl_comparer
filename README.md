@@ -13,7 +13,7 @@
 ## 動作環境
 
 - WSL, Linux, Windows, Macなど （GPU不要です）
-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/TaroNakasendo/output_jsonl_comparer/google_colab.ipynb)　← クリックするとGoogle Colabでノートブックが開きます
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/TaroNakasendo/output_jsonl_comparer/blob/main/google_colab.ipynb)　← クリックするとGoogle Colabでノートブックが開きます
 
 ## インストール
 
