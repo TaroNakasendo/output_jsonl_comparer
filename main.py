@@ -26,10 +26,10 @@ def main():
 function shortcuts(e) {
 
     if (e.key ==  'ArrowLeft') {
-        document.getElementById("component-4").click();
+        document.getElementById("prev_button").click();
     }
     else if (e.key == 'ArrowRight') {
-        document.getElementById("component-5").click();
+        document.getElementById("next_button").click();
     }
 }
 document.addEventListener('keyup', shortcuts, false);
@@ -42,8 +42,8 @@ document.addEventListener('keyup', shortcuts, false);
         gr.Markdown(f"# {title}")
         with gr.Row():
             task_id = gr.Textbox(label=f"タスクID (0 - {len(data) - 1})")
-            prev_button = gr.Button("＜ 前のタスク")
-            next_button = gr.Button("次のタスク ＞")
+            prev_button = gr.Button("＜ 前のタスク", elem_id="prev_button")
+            next_button = gr.Button("次のタスク ＞", elem_id="next_button")
         input_text = gr.Textbox(label="入力", interactive=False)
         with gr.Row():
             output_old = gr.Textbox(
